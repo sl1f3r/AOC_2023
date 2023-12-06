@@ -16,15 +16,14 @@ class Solution:
             if len(numarray) == 1: 
                 strval = str(numarray[0]) + str(numarray[0])
                 val = int(strval)
-            else: 
+            elif len(numarray) > 1: 
                 strval = str(numarray[0]) + str(numarray[-1])
                 val = int(strval)
             
-            total += val
+            self.total += val
 
 
-        return total
+        return self.total
     
-
-sol = Solution
+sol = Solution()
 print(sol.calcvalue())
