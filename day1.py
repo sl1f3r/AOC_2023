@@ -23,8 +23,13 @@ class Solution:
             
             self.total += val # add to total
 
-
         return self.total
+
+    # PART TWO
+    def calcvalue_words(self): 
+        return 0
+
+        
     
 sol = Solution()
 print(sol.calcvalue())
