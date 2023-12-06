@@ -4,13 +4,14 @@ class Solution:
         self.total = 0
 
     def calcvalue(self):
-        file = open(self.input, 'r')
+        file = open(self.input)
 
         for line in file: 
             numarray = []
             val = 0
             for character in line: 
-                if isinstance(character, int):
+                if character.isnumeric():
+                    print(character)
                     numarray.append(character)
             
             if len(numarray) == 1: 
