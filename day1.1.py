@@ -7,7 +7,10 @@ class Solution:
 
     def calcvalue(self, line): # calculates the numerical value of a line
         value = 0
-
+        numarray = []
+        for i in range(len(line)): 
+            if line[i].isnumeric(): # check which characters in that line are numbers
+                numarray.append(line[i]) # add to array per line
         
         return value
 
